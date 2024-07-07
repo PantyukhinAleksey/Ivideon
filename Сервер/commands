@@ -1,0 +1,18 @@
+{
+    "ON": {
+        "type": "0x12",
+        "length": "0"
+    },
+    "OFF": {
+        "type": "0x13",
+        "length": "0"
+    },
+    "COLOR": {
+        "type": "0x13",
+        "length": "20"
+    },
+    "UNDEFINED": {
+        "type": "0x55",
+        "length": "50"
+    }
+}

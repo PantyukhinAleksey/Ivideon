@@ -1,0 +1,4 @@
+asyncio==3.4.3
+configparser==7.0.0
+aiohttp==3.7.4.post0
+tlv8==0.10.0
