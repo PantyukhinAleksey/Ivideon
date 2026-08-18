@@ -21,9 +21,17 @@ class DefaultConfig(Config):
         self.port = self._get_param('port')
 
 
+class ServerConfig(Config):
+    def __init__(self, section, parser):
+        super().__init__(section, parser)
+        self.host = self._get_param('host')
+        self.port = self._get_param('port')
+
+
 _app_config_path = os.path.join(os.path.dirname(__file__), '', 'config.ini')
 _parser = configparser.ConfigParser(allow_no_value=True)
 _parser.optionxform = str
 _parser.read(_app_config_path)
 
 default_config = DefaultConfig('DEFAULT', _parser)
+server_config = ServerConfig('SERVER', _parser)

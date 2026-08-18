@@ -13,6 +13,6 @@
     },
     "UNDEFINED": {
         "type": "0x55",
-        "length": "50"
+        "length": 50
     }
 }
